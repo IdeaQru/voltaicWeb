@@ -1,0 +1,32 @@
+{
+  "name": "voltaic-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "description": "Voltaic AI Angular deployment server with Node.js + Express",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "pm2": "pm2 start ecosystem.config.js",
+    "pm2-stop": "pm2 stop voltaic-server",
+    "pm2-restart": "pm2 restart voltaic-server",
+    "pm2-status": "pm2 status",
+    "pm2-logs": "pm2 logs voltaic-server"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "angular",
+    "voltaic",
+    "pm2",
+    "static",
+    "server"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
